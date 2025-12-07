@@ -1,5 +1,4 @@
 import React from 'react';
-import Placeholder from '../Placeholder';
 import { Box, Typography } from '@mui/material';
 
 const About = () => (
