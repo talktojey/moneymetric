@@ -50,8 +50,14 @@ const ArticlesList = () => {
       <Grid container spacing={3} sx={{ maxWidth: 900, mx: 'auto', mt: 2 }}>
         {paginated.map(article => (
           <Grid item xs={12} sm={6} md={4} key={article.id}>
-            <Card elevation={4} sx={{ bgcolor: 'white', borderRadius: 3, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <Card elevation={4} sx={{ bgcolor: 'white', borderRadius: 3, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', transition: 'box-shadow 0.2s', '&:hover': { boxShadow: 8 } }}>
               <CardActionArea component={Link} to={`/articles/${article.id}`} sx={{ height: '100%' }}>
+                {/* Optional: Article image thumbnail */}
+                {article.image && (
+                  <Box sx={{ width: '100%', height: 140, mb: 1, overflow: 'hidden', borderRadius: 2 }}>
+                    <img src={article.image} alt={article.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  </Box>
+                )}
                 <CardContent>
                   <Typography variant="h6" fontWeight={700} fontFamily="Inter, Roboto, Arial" gutterBottom noWrap>
                     {article.title}
@@ -66,6 +72,11 @@ const ArticlesList = () => {
                       ))}
                     </Stack>
                   )}
+                  <Box sx={{ mt: 2, textAlign: 'right' }}>
+                    <Typography variant="caption" color="text.secondary">
+                      {article.author ? `By ${article.author}` : ''} {article.date ? `• ${article.date}` : ''}
+                    </Typography>
+                  </Box>
                 </CardContent>
               </CardActionArea>
             </Card>
