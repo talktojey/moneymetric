@@ -1,3 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +54,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .MuiGrid-item {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  .MuiCard-root {
+    min-height: 60px !important;
+  }
+  footer {
+    font-size: 0.95rem !important;
+    padding: 10px !important;
   }
 }

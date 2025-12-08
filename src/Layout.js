@@ -17,14 +17,16 @@ const Layout = ({ children }) => {
       <CssBaseline />
       <AppBar position="static" color="primary" elevation={2}>
         <Toolbar>
-          <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
-            <Box sx={{ bgcolor: '#0e7c7b', color: 'white', fontWeight: 700, fontSize: 28, px: 2, py: 0.5, borderRadius: 2, fontFamily: 'Inter, Roboto, Arial' }}>
-              MM
-            </Box>
-            <Typography variant="h6" sx={{ ml: 2, flexGrow: 1, fontWeight: 700, fontFamily: 'Inter, Roboto, Arial' }}>
-              MoneyMetric
-            </Typography>
-          </Box>
+          <Typography
+            variant="h6"
+            sx={{ flexGrow: 1, fontWeight: 700, fontFamily: 'Inter, Roboto, Arial', cursor: 'pointer', ml: 0, mr: 0 }}
+            component={Link}
+            to="/"
+            color="inherit"
+            style={{ textDecoration: 'none' }}
+          >
+            MoneyMetric
+          </Typography>
           {menuItems.map((item) => (
             <Button
               key={item.path}
