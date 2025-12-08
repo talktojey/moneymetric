@@ -25,21 +25,28 @@ const PrivacyPolicy = () => (
         The results are estimates and should not be considered financial, legal, or investment advice.<br/>
         Users are advised to consult qualified professionals before making financial decisions.<br/><br/>
         <strong>4. Cookies and Web Beacons</strong><br/>
-        We use cookies to: Improve user experience, Store user preferences, Serve relevant advertisements.<br/>
-        You can disable cookies through your browser settings if you prefer.<br/><br/>
-        <strong>5. Data Security</strong><br/>
+        We use cookies to improve your experience, store preferences, and serve relevant ads. Cookies are small files stored on your device. You can disable cookies in your browser settings, but some features may not work as intended.<br/><br/>
+        <strong>5. Google AdSense & Third-Party Ads</strong><br/>
+        We display ads from Google AdSense and other third-party networks. These partners may use cookies and web beacons to show ads based on your prior visits to our site or other sites. Ad networks may collect non-personal data (such as browser type, device info, and IP address) to personalize ads.<br/><br/>
+        <strong>6. Google DoubleClick Cookie</strong><br/>
+        Google, as a third-party vendor, uses the DoubleClick cookie to serve ads to users based on their visit to our site and other sites on the Internet. You may opt out of the use of the DoubleClick cookie for interest-based advertising by visiting Google Ad Settings.<br/><br/>
+        <strong>7. Analytics Usage</strong><br/>
+        We use Google Analytics and similar tools to understand how visitors use our site. These services collect non-personal data such as pages visited, time spent, and device information. This helps us improve our content and user experience. You can opt out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on.<br/><br/>
+        <strong>8. User Consent</strong><br/>
+        By using our website, you consent to our Privacy Policy, including the use of cookies, analytics, and advertising technologies. You may withdraw consent at any time by adjusting your browser settings or contacting us.<br/><br/>
+        <strong>9. Data Security</strong><br/>
         We take reasonable measures to protect your information.<br/>
         However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.<br/><br/>
-        <strong>6. Children’s Information</strong><br/>
+        <strong>10. Children’s Information</strong><br/>
         Our website is not intended for children under the age of 13.<br/>
         We do not knowingly collect personal data from children.<br/>
         If you believe your child has provided personal information on our website, please contact us, and we will promptly remove it.<br/><br/>
-        <strong>7. Your Consent</strong><br/>
+        <strong>11. Your Consent</strong><br/>
         By using our website, you hereby consent to this Privacy Policy and agree to its terms.<br/><br/>
-        <strong>8. Updates to This Policy</strong><br/>
+        <strong>12. Updates to This Policy</strong><br/>
         We may update this Privacy Policy from time to time.<br/>
         Any changes will be posted on this page with an updated “Last updated” date.<br/><br/>
-        <strong>9. Contact Us</strong><br/>
+        <strong>13. Contact Us</strong><br/>
         If you have any questions about this Privacy Policy, you can contact us at:<br/>
         📧 Email: <span style={{color:'#0e7c7b'}}>your-email@example.com</span><br/>
         🌐 Website: <span style={{color:'#0e7c7b'}}>yourdomain.com</span>

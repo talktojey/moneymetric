@@ -21,6 +21,7 @@ import {
 } from './pages';
 import ArticlesList from './ArticlesList';
 import ArticlePage from './ArticlePage';
+import ContactUs from './info/ContactUs';
 import './App.css';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/articles" element={<ArticlesList />} />
           <Route path="/articles/:id" element={<ArticlePage />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </Layout>
     </Router>
