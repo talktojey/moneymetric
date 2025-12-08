@@ -67,6 +67,15 @@ const SipCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the SIP Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The SIP (Systematic Investment Plan) Calculator helps you estimate the future value of your regular investments in mutual funds. It uses the formula:
+          <br /><strong>Future Value = SIP Amount × [ (1 + r)<sup>n</sup> – 1 ] / r × (1 + r)</strong>
+          <br />where <strong>r</strong> is the periodic rate of return and <strong>n</strong> is the number of periods.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for planning your investments and achieving your financial goals. It helps you understand how your money grows over time with regular contributions.
+        </Typography>
       </Paper>
     </Box>
   );

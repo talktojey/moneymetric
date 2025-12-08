@@ -76,6 +76,14 @@ const LoanEligibilityCalculator = () => {
               </Typography>
             </Box>
           )}
+          <Typography variant="h5" gutterBottom color="primary">How does the Loan Eligibility Calculator work?</Typography>
+          <Typography variant="body1" paragraph>
+            The Loan Eligibility Calculator helps you estimate the maximum loan amount you can get based on your income and expenses. It typically uses the formula:
+            <br /><strong>Eligible Loan = (Net Monthly Income × Eligibility Factor) – Existing EMIs</strong>
+          </Typography>
+          <Typography variant="body1" paragraph>
+            This tool is important for understanding your borrowing capacity and planning your finances before applying for a loan. It helps you avoid rejection and choose the right loan amount.
+          </Typography>
         </Box>
       </Paper>
     </Box>

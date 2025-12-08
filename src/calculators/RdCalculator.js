@@ -66,6 +66,15 @@ const RdCalculator = () => {
               </Typography>
             </Box>
           )}
+          <Typography variant="h5" gutterBottom color="primary">How does the RD Calculator work?</Typography>
+          <Typography variant="body1" paragraph>
+            The RD (Recurring Deposit) Calculator helps you estimate the maturity amount of your recurring deposit investment. It uses the formula:
+            <br /><strong>Maturity Amount = Monthly Deposit × [ (1 + r/n)<sup>nt</sup> – 1 ] / (1 – (1 + r/n)<sup>-1</sup>)</strong>
+            <br />where <strong>r</strong> is the annual interest rate, <strong>n</strong> is the number of compounding periods per year, and <strong>t</strong> is the tenure in years.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            This tool is important for planning your regular savings and understanding how your monthly deposits grow over time.
+          </Typography>
         </Box>
       </Paper>
     </Box>

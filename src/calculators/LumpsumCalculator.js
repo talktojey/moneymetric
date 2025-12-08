@@ -65,6 +65,15 @@ const LumpsumCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the Lumpsum Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The Lumpsum Calculator helps you estimate the future value of a one-time investment. It uses the formula:
+          <br /><strong>Future Value = Principal × (1 + r)<sup>n</sup></strong>
+          <br />where <strong>r</strong> is the annual rate of return and <strong>n</strong> is the number of years.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for understanding how your lump sum investment can grow over time and for planning your financial goals.
+        </Typography>
       </Paper>
     </Box>
   );

@@ -64,6 +64,14 @@ const IncomeTaxCalculator = () => {
               </Typography>
             </Box>
           )}
+          <Typography variant="h5" gutterBottom color="primary">How does the Income Tax Calculator work?</Typography>
+          <Typography variant="body1" paragraph>
+            The Income Tax Calculator helps you estimate your annual tax liability based on your income, deductions, and applicable tax slabs. It uses the formula:
+            <br /><strong>Tax = (Gross Income – Deductions) × Tax Rate</strong>
+          </Typography>
+          <Typography variant="body1" paragraph>
+            This tool is important for tax planning, helping you understand your obligations and optimize your savings.
+          </Typography>
         </Box>
       </Paper>
     </Box>

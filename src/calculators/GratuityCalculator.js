@@ -58,6 +58,14 @@ const GratuityCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the Gratuity Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The Gratuity Calculator helps you estimate the lump sum amount you will receive from your employer as gratuity. It uses the formula:
+          <br /><strong>Gratuity = (15 × Last Drawn Salary × Years of Service) / 26</strong>
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for understanding your retirement benefits and planning your future finances.
+        </Typography>
       </Paper>
     </Box>
   );

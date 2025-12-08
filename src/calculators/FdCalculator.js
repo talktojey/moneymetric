@@ -70,6 +70,15 @@ const FdCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the FD Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The FD (Fixed Deposit) Calculator helps you estimate the maturity amount of your fixed deposit investment. It uses the formula:
+          <br /><strong>Maturity Amount = Principal × (1 + r/n)<sup>nt</sup></strong>
+          <br />where <strong>r</strong> is the annual interest rate, <strong>n</strong> is the number of compounding periods per year, and <strong>t</strong> is the tenure in years.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for planning your savings and understanding how your money grows in a fixed deposit over time.
+        </Typography>
       </Paper>
     </Box>
   );

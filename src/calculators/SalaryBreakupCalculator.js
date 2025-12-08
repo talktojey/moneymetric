@@ -38,6 +38,13 @@ const SalaryBreakupCalculator = () => {
           Salary Breakup Calculator
         </Typography>
         <Divider sx={{ my: 3 }} />
+        <Typography variant="h5" gutterBottom color="primary">How does the Salary Breakup Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The Salary Breakup Calculator helps you understand the components of your salary, such as basic pay, allowances, deductions, and net take-home. It uses your salary details to break down the total package.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for transparency and financial planning, helping you know exactly what you earn and what is deducted.
+        </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <Typography fontWeight={600} fontFamily="Inter, Roboto, Arial">Annual CTC (₹)</Typography>
           <Slider min={100000} max={10000000} step={10000} value={ctc ? Number(ctc) : 500000} onChange={(_, v) => setCtc(String(v))} sx={{ mb: 1 }} />

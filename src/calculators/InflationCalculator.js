@@ -65,6 +65,15 @@ const InflationCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the Inflation Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The Inflation Calculator helps you estimate the future value of money by accounting for inflation. It uses the formula:
+          <br /><strong>Future Value = Present Value × (1 + Inflation Rate)<sup>n</sup></strong>
+          <br />where <strong>n</strong> is the number of years.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for long-term financial planning, helping you understand how inflation affects your savings and investments over time.
+        </Typography>
       </Paper>
     </Box>
   );

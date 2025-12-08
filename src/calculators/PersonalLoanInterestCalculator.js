@@ -65,6 +65,15 @@ const PersonalLoanInterestCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the Personal Loan Interest Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The Personal Loan Interest Calculator helps you estimate the total interest payable on your personal loan. It uses the formula:
+          <br /><strong>Interest = (Principal × Rate × Time) / 100</strong>
+          <br />where <strong>Principal</strong> is the loan amount, <strong>Rate</strong> is the annual interest rate, and <strong>Time</strong> is the loan tenure in years.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This calculator is important for understanding the true cost of your loan and planning your repayments. It helps you compare loan offers and choose the best option for your needs.
+        </Typography>
       </Paper>
     </Box>
   );

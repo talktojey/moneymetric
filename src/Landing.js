@@ -38,10 +38,10 @@ const Landing = () => {
         <Typography variant="h3" align="center" gutterBottom fontWeight={700}>
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}></Link>
         </Typography>
-        <Typography variant="h4" align="center" fontWeight={600} gutterBottom>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>MoneyMetric</Link>
+        <Typography variant="h4" align="center" fontWeight={600} gutterBottom sx={{ color: '#0e7c7b' }}>
+          <Link to="/" style={{ textDecoration: 'none', color: '#0e7c7b' }}>MoneyMetric</Link>
         </Typography>
-        <Typography variant="h6" align="center" color="text.secondary" paragraph>
+        <Typography variant="h6" align="center" paragraph sx={{ color: '#0e7c7b', fontWeight: 500 }}>
           Choose a calculator below to get started
         </Typography>
       </Container>
@@ -55,6 +55,7 @@ const Landing = () => {
                     <Typography variant="h6" align="center" sx={{ fontSize: { xs: 15, sm: 17 }, wordBreak: 'break-word' }}>
                       {calc.label}
                     </Typography>
+                    {/* Removed EMI Calculator explanation and placeholder for other explanations from the landing page. Only calculator label is shown. */}
                   </CardContent>
                 </CardActionArea>
               </Card>

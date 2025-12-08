@@ -115,6 +115,15 @@ const EmiCalculator = () => {
             </Box>
           )}
         </Box>
+        <Typography variant="h5" gutterBottom color="primary">How does the EMI Calculator work?</Typography>
+        <Typography variant="body1" paragraph>
+          The EMI (Equated Monthly Installment) Calculator helps you estimate your monthly loan payments. It uses the formula:
+          <br /><strong>EMI = [P × r × (1+r)<sup>n</sup>] / [(1+r)<sup>n</sup> – 1]</strong>
+          <br />where <strong>P</strong> is the principal amount, <strong>r</strong> is the monthly interest rate, and <strong>n</strong> is the number of payments.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          This tool is important for planning your finances before taking a loan, so you know exactly what you’ll pay each month and can compare offers easily. It helps you avoid surprises and make informed decisions about your borrowing.
+        </Typography>
       </Paper>
     </Box>
   );

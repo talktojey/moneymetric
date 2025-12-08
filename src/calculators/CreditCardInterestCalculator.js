@@ -65,6 +65,14 @@ const CreditCardInterestCalculator = () => {
               </Typography>
             </Box>
           )}
+          <Typography variant="h5" gutterBottom color="primary">How does the Credit Card Interest Calculator work?</Typography>
+          <Typography variant="body1" paragraph>
+            The Credit Card Interest Calculator helps you estimate the interest charges on your outstanding credit card balance. It uses the formula:
+            <br /><strong>Interest = Outstanding Amount × (Annual Rate / 12) × Number of Months</strong>
+          </Typography>
+          <Typography variant="body1" paragraph>
+            This tool is important for managing your credit card debt and avoiding high interest costs. It helps you understand how much you’ll pay if you carry a balance and encourages timely payments.
+          </Typography>
         </Box>
       </Paper>
     </Box>
