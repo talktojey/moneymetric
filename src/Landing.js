@@ -17,43 +17,59 @@ const calculators = [
   { path: '/inflation-calculator', label: 'Inflation Calculator' },
 ];
 
-const Landing = () => (
-  <>
-    <Container maxWidth="sm" sx={{ py: 4 }}>
-      <Typography variant="h3" align="center" gutterBottom fontWeight={700}>
-        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}></Link>
-      </Typography>
-      <Typography variant="h4" align="center" fontWeight={600} gutterBottom>
-        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>MoneyMetric</Link>
-      </Typography>
-      <Typography variant="h6" align="center" color="text.secondary" paragraph>
-        Choose a calculator below to get started
-      </Typography>
-    </Container>
-    <Container maxWidth="md" sx={{ px: { xs: 1, sm: 2, md: 4 }, pb: 2 }}>
-      <Grid container spacing={2}>
-        {calculators.map((calc) => (
-          <Grid item xs={12} sm={6} md={4} key={calc.path}>
-            <Card elevation={3} sx={{ minHeight: 80, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', width: '100%' }}>
-              <CardActionArea component={Link} to={calc.path} sx={{ width: '100%', height: '100%' }}>
-                <CardContent sx={{ p: { xs: 1, sm: 2 }, textAlign: 'center' }}>
-                  <Typography variant="h6" align="center" sx={{ fontSize: { xs: 15, sm: 17 }, wordBreak: 'break-word' }}>
-                    {calc.label}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-    <footer style={{ marginTop: 32, padding: 16, textAlign: 'center', background: '#f5f5f5', borderRadius: 8, fontSize: '1rem', width: '100%' }}>
-      <Link to="/privacy-policy" style={{ margin: '0 12px' }}>Privacy Policy</Link>
-      <Link to="/about" style={{ margin: '0 12px' }}>About Us</Link>
-      <Link to="/contact-us" style={{ margin: '0 12px' }}>Contact Us</Link>
-      <Link to="/disclaimer" style={{ margin: '0 12px' }}>Disclaimer</Link>
-    </footer>
-  </>
-);
+const getGridSize = () => {
+  if (window.innerWidth < 600) return 12;
+  if (window.innerWidth < 900) return 6;
+  return 4;
+};
+
+const Landing = () => {
+  const [gridSize, setGridSize] = React.useState(getGridSize());
+
+  React.useEffect(() => {
+    const handleResize = () => setGridSize(getGridSize());
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return (
+    <>
+      <Container maxWidth="sm" sx={{ py: 4 }}>
+        <Typography variant="h3" align="center" gutterBottom fontWeight={700}>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}></Link>
+        </Typography>
+        <Typography variant="h4" align="center" fontWeight={600} gutterBottom>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>MoneyMetric</Link>
+        </Typography>
+        <Typography variant="h6" align="center" color="text.secondary" paragraph>
+          Choose a calculator below to get started
+        </Typography>
+      </Container>
+      <Container maxWidth="md" sx={{ px: { xs: 1, sm: 2, md: 4 }, pb: 2 }}>
+        <Grid container spacing={2}>
+          {calculators.map((calc) => (
+            <Grid item xs={12} sm={gridSize} md={gridSize} key={calc.path}>
+              <Card elevation={3} sx={{ minHeight: 80, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', width: '100%' }}>
+                <CardActionArea component={Link} to={calc.path} sx={{ width: '100%', height: '100%' }}>
+                  <CardContent sx={{ p: { xs: 1, sm: 2 }, textAlign: 'center' }}>
+                    <Typography variant="h6" align="center" sx={{ fontSize: { xs: 15, sm: 17 }, wordBreak: 'break-word' }}>
+                      {calc.label}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      <footer style={{ marginTop: 32, padding: 16, textAlign: 'center', background: '#f5f5f5', borderRadius: 8, fontSize: '1rem', width: '100%' }}>
+        <Link to="/privacy-policy" style={{ margin: '0 12px' }}>Privacy Policy</Link>
+        <Link to="/about" style={{ margin: '0 12px' }}>About Us</Link>
+        <Link to="/contact-us" style={{ margin: '0 12px' }}>Contact Us</Link>
+        <Link to="/disclaimer" style={{ margin: '0 12px' }}>Disclaimer</Link>
+      </footer>
+    </>
+  );
+};
 
 export default Landing;
